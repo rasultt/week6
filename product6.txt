@@ -1,0 +1,24 @@
+// Example usage of the classes
+class Program
+{
+    static void Main()
+    {
+        double distance = 240; // Distance in kilometers
+
+        // Create an instance of Car
+        Transport myCar = new Car();
+        // Calculate travel time for the car
+        double carTravelTime = myCar.CalculateTravelTime(distance);
+        // Display car information and travel time
+        Console.WriteLine(myCar.GetTransportInfo());
+        Console.WriteLine($"Travel Time by Car: {carTravelTime} hours");
+
+        // Create an instance of Plane
+        Transport myPlane = new Plane();
+        // Calculate travel time for the plane
+        double planeTravelTime = myPlane.CalculateTravelTime(distance);
+        // Display plane information and travel time
+        Console.WriteLine(myPlane.GetTransportInfo());
+        Console.WriteLine($"Travel Time by Plane: {planeTravelTime} hours");
+    }
+}

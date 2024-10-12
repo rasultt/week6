@@ -1,0 +1,51 @@
+Week 6     Сериккан Расул ИС 231(4)    Вариант 2
+using System;
+
+// Abstract class Transport that describes transport vehicles
+public abstract class Transport
+{
+    // Abstract method to calculate travel time for a given distance
+    public abstract double CalculateTravelTime(double distance);
+    
+    // Abstract method to return information about the transport vehicle
+    public abstract string GetTransportInfo();
+}
+
+// Class Car that inherits from Transport
+public class Car : Transport
+{
+    // Average speed of the car in km/h
+    private const double AverageSpeed = 80.0;
+
+    // Implementation of the CalculateTravelTime method for Car
+    public override double CalculateTravelTime(double distance)
+    {
+        return distance / AverageSpeed; // Calculate travel time based on distance and average speed
+    }
+
+    // Implementation of the GetTransportInfo method for Car
+    public override string GetTransportInfo()
+    {
+        return "Transport Type: Car, Average Speed: 80 km/h"; // Return information about the car
+    }
+}
+
+// Class Plane that inherits from Transport
+public class Plane : Transport
+{
+    // Average speed of the plane in km/h
+    private const double AverageSpeed = 600.0;
+
+    // Implementation of the CalculateTravelTime method for Plane
+    public override double CalculateTravelTime(double distance)
+    {
+        return distance / AverageSpeed; // Calculate travel time based on distance and average speed
+    }
+
+    // Implementation of the GetTransportInfo method for Plane
+    public override string GetTransportInfo()
+    {
+        return "Transport Type: Plane, Average Speed: 600 km/h"; // Return information about the plane
+    }
+}
+

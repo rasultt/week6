@@ -1,0 +1,6 @@
+Transport Type: Car, Average Speed: 80 km/h
+Travel Time by Car: 3 hours
+Transport Type: Plane, Average Speed: 600 km/h
+Travel Time by Plane: 0.4 hours
+
+=== Code Execution Successful ===
